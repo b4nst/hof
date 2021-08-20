@@ -150,7 +150,7 @@ func (mdr *Modder) LoadRemoteModule(R Replace) error {
 		return err
 	}
 
-	err = m.LoadMetaFiles(mdr.ModFile, mdr.SumFile, mdr.MappingFile, true /* ignoreReplace directives */)
+	err = m.LoadMetaFiles(mdr.ModFile, mdr.SumFile, mdr.MappingFile, false)
 	if err != nil {
 		return err
 	}
